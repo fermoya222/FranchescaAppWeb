@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchesca Bikinis - Editar</title>
+    <link rel="stylesheet" href="recursos/css/base.css">
+    <script type="module" src="./recursos/js/editar.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Listado</a>
+            <a href="alta.html">Registrar Bikini</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h1>Franchesca Bikinis</h1>
+        <h2>Editar Bikini</h2>
+        <button class="boton-eliminar" id="eliminar-registro">Eliminar Bikini</button>
+        <div id="mensajes"></div>
+        <section>
+            <form id="form-editar">
+                <label for="nombre">
+                    Nombre
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre del bikini" required>
+                </label>
+                <label for="descripcion">
+                    Descripción
+                    <textarea name="descripcion" id="descripcion" rows="3" placeholder="Descripción del bikini" required></textarea>
+                </label>
+                <label for="articulo">
+                    Artículo
+                    <input type="text" name="articulo" id="articulo" placeholder="Código o referencia" required>
+                </label>
+                <label for="categoria">
+                    Categoría
+                    <select name="categoria" id="categoria" required>
+                        <option value="" disabled selected>Seleccionar categoría</option>
+                        <option value="Bikini">Bikini</option>
+                        <option value="Tankini">Tankini</option>
+                        <option value="Trikini">Trikini</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </label>
+                <label for="disponibilidad">
+                    Disponibilidad
+                    <select name="disponibilidad" id="disponibilidad" required>
+                        <option value="" disabled selected>Seleccionar disponibilidad</option>
+                        <option value="Disponible">Disponible</option>
+                        <option value="Agotado">Agotado</option>
+                    </select>
+                </label>
+
+          
+
+                <label for="imagen">
+                    Imagen
+                    <input type="file" name="imagen" id="imagen" accept="image/*" required>
+                </label>
+                <button type="submit">Modificar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

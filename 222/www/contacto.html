@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Tienda de trajes de baño">
+        <title>Franchesca</title>
+        <!-- Asi llamo a la hoja de estilos -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="shorcut icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/Franchesca.png" alt="Logo">
+                    </a>
+                </div>
+                <!-- Enlaces -->
+                <div class="nav-links">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido del cuerpo de la página -->
+        <div class="content">
+            
+            <h1 class="catalogo">CONTACTANOS</h1>
+            <div class="parrafo-container">
+                <p> Completa con tus datos para 
+                    que podamos contactarte 
+                    y consulta tus dudas. 
+                </p>
+            </div>
+            
+            <!-- Formulario -->
+            <form>
+                <label for="fnombre">Nombre:</label>
+                <input type="text" name="fnombre">
+
+                <label for="fcelular">Celular:</label>
+                <input type="number" name="fcelular">
+
+                <label for="fmail">Mail:</label>
+                <input type="email" name="fmail">
+
+                <label for="pais">País:</label>
+                <select name="pais" id="">
+                    <option value="">[Seleccionar País]</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+
+                <label for="fmensaje">Mensaje:</label>
+                <input type="text" name="fmensaje">
+                
+
+                <input type="submit" value="Enviar">
+            </form>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="column-container">
+                <div>
+                    <h3>Franchesca</h3>
+                    <ul type="circle">
+                        <li>San Luis 61, Cba.</li>
+                        <li>franchescabikinis@gmail.com</li>
+                        <li>3563-403776</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Redes</h3>
+                    <ul type="circle">
+                        <li>Franchescabikinis</li>
+                        <li>Franchesca Bikinis</li>
+                        <li>FranchescaX</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Productos</h3>
+                    <ul type="circle">
+                        <li>Bikinis</li>
+                        <li>Lencería</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>info</h3>
+                    <ul type="circle">
+                        <li>Compras únicamente mayoristas y online</li>
+                        <li>Envíos a todo el país y retiros en San Luis 61, Cba.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

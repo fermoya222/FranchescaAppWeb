@@ -1,0 +1,62 @@
+{
+    
+    "productos": [
+        {
+            "id": "bikinis1",
+            "categoria": "bikinis",
+            "imagen": "img/bikini1.jpg",
+            "titulo": "Bikini",
+            "descripcion": "Bikini \"Angra\" (art. 101)"
+        },
+        {
+            "id": "bikinis2",
+            "categoria": "bikinis",
+            "imagen": "img/bikini2.jpg",
+            "titulo": "Bikini",
+            "descripcion": "Bikini \"Fenicia\" (art. 102)"
+        },
+        {
+            "id": "bikinis3",
+            "categoria": "bikinis",
+            "imagen": "img/bikini3.jpg",
+            "titulo": "Bikini",
+            "descripcion": "Bikini \"Alika\" (art. 103)"
+        },
+        {
+            "id": "bikinis4",
+            "categoria": "bikinis",
+            "imagen": "img/bikini4.jpg",
+            "titulo": "Bikini",
+            "descripcion": "Bikini \"Malika\" (art. 104)"
+        },
+        {
+            "id": "lenceria1",
+            "categoria": "lenceria",
+            "imagen": "img/lenceria1.jpg",
+            "titulo": "Lencería",
+            "descripcion": "Conjunto \"Kiana\" (art. 201)"
+        },
+        {
+            "id": "lenceria2",
+            "categoria": "lenceria",
+            "imagen": "img/lenceria2.jpg",
+            "titulo": "Lencería",
+            "descripcion": "Conjunto \"Maikala\" (art. 202)"
+        },
+        {
+            "id": "lenceria3",
+            "categoria": "lenceria",
+            "imagen": "img/lenceria3.jpg",
+            "titulo": "Lencería",
+            "descripcion": "Conjunto \"Electra\" (art. 203)"
+        },
+        {
+            "id": "lenceria4",
+            "categoria": "lenceria",
+            "imagen": "img/lenceria4.jpg",
+            "titulo": "Lencería",
+            "descripcion": "Conjunto \"Viena\" (art. 204)"
+        }
+    ]
+    
+}

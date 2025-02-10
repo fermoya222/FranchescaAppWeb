@@ -1,0 +1,190 @@
+/* NAVBAR --------------------------------------------------------------------------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Estilos para el logo */
+.logo {
+    display: flex; /* Contenido en línea */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para la imagen del logo */
+.logo img {
+    height: 55px; /* Altura del logo */
+}
+
+.navbar-container {
+    display: flex; /* Contenido en línea */
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #cfb06c; /* Fondo de color mostaza */
+    height: 60px; /* Altura del navbar */
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Fijar el navbar */
+    top: 0; /* Fijar el navbar en la parte superior */
+    z-index: 1000; /* Asegurar que el navbar esté sobre otros elementos */
+}
+
+/* Estilos para los enlaces */
+.navbar-container .nav-links {
+    display: flex; /* Contenido en línea */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para cada enlace */
+.navbar-container .nav-link {
+    margin: 0 10px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    cursor: pointer; /* Cursor de ratón */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links:hover {
+    opacity: .8;
+}
+
+/* BODY--------------------------------------------------------------------------------------------------------------- */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-top: 60px; /* Espacio para el navbar fijo */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px; /* Ancho fijo del sidebar */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Fijar el sidebar */
+    top: 60px; /* Debajo del navbar */
+    bottom: 0; /* Hasta el footer */
+    z-index: 999; /* Asegurar que el sidebar esté sobre otros elementos */
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #cfb06c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.sidebar button:hover {
+    background-color: #b8985c;
+}
+
+.content {
+    margin-left: 220px; /* Espacio para el sidebar fijo */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto; /* Añadir scroll si el contenido es mayor que el área visible */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la línea */
+    justify-content: center; /* Centrar los productos horizontalmente */
+    align-items: center; /* Centrar los productos verticalmente */
+}
+
+.product {
+    width: 200px; /* Ancho fijo para cada producto */
+    height: 200px; /* Alto fijo para cada producto */
+    margin: 30px; /* Espacio alrededor de cada producto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Fondo claro para destacar los productos */
+    border: 1px solid #ddd; /* Borde para cada producto */
+}
+
+.product img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto;
+    /* max-height: 60px; /* Limita la altura de la imagen */
+} 
+
+.product h2 {
+    margin: 5px 0;
+    font-size: 14px; /* Tamaño de fuente ajustado para caber en el contenedor */
+}
+
+.product p {
+    font-size: 12px; /* Tamaño de fuente ajustado para caber en el contenedor */
+    margin: 0;
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.btncarrito {
+    background-color: #cfb06c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btncarrito:hover {
+    background-color: #b39557;
+}
+
+/* FOOTER ---------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para el footer */
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    background-color: #cfb06c; /* Fondo de color mostaza */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto al centro */
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Fijar el footer */
+    bottom: 0; /* Fijar el footer en la parte inferior */
+    z-index: 1000; /* Asegurar que el footer esté sobre otros elementos */
+}
+
+/* Estilos para los contenedores de columna dentro del footer */
+.column-container {
+    display: flex; /* Muestra los contenedores en línea */
+    justify-content: space-around; /* Distribuye los contenedores uniformemente */
+    margin-bottom: 20px; /* Margen inferior para separar las columnas */
+}
+
+/* Estilos para los títulos dentro del footer */
+footer h3 {
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+/* Estilos para las listas dentro del footer */
+footer ul {
+    list-style: none; /* Quita los estilos de lista (viñetas) */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    display: inline-block; /* Muestra las listas en línea */
+    vertical-align: top; /* Alinea las listas en la parte superior */
+}
+
+/* Estilos para los elementos de las listas dentro del footer */
+footer ul li {
+    margin: 5px 0; /* Espacio entre los elementos de la lista */
+}

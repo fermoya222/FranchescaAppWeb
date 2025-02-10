@@ -1,0 +1,81 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Gris claro */
+}
+
+/* Estilo del formulario */
+.login-form {
+    background-color: #ffffff; /* Blanco */
+    border: 2px solid #cfb06c; /* Dorado */
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 5% auto; /* Centrado en la pantalla */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+.login-form label {
+    font-size: 1rem;
+    color: #333333; /* Negro */
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; /* Letras en mayúsculas */
+}
+
+/* Inputs */
+.login-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc; /* Gris claro */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333333; /* Negro */
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #cfb06c; /* Dorado */
+    box-shadow: 0 0 6px rgba(207, 176, 108, 0.7);
+}
+
+/* Botón */
+.login-button {
+    background-color: #cfb06c; /* Dorado */
+    color: #ffffff; /* Blanco */
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Letras en mayúsculas */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #b79557; /* Dorado más oscuro */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.login-button:active {
+    transform: scale(1);
+}
+
+/* Fondo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Fondo degradado blanco a gris claro */
+}

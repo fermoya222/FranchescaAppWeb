@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*NAVBAR ---------------------------------------------------------------------------------------------------------------*/
+/* Estilos para el logo */
+.logo {
+    display: flex; /* Contenido en línea */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para la imagen del logo */
+.logo img {
+    height: 55px; /* Altura del logo */
+}
+.navbar-container {
+    display: flex; /* Contenido en línea */
+    justify-content: space-between; /* Alinea los elementos a los extrmos */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #cfb06c; /* Fondo de color mostaza */
+    height: 60px; /* Altura del navbar */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para los enlaces */
+.navbar-container .nav-links {
+    display: flex; /* Contenido en línea */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para cada enlace */
+.navbar-container .nav-link{
+    margin: 0 10px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    cursor: pointer; /* Cursor de ratón */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.nav-links:hover {
+    opacity: .8;
+}
+
+
+/*INDEX.HTML--------------------------------------------------------------------------------------------------------------*/
+/* Estilos para el contenedor del carousel */
+.carousel-container {
+    width: 100%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative; /* Posición relativa para los controles de navegación */
+}
+
+/* Estilos para el carousel */
+.carousel {
+    width: 100%; /* Ancho total del carousel (tres imágenes) */
+    display: flex; /* Contenido en línea */
+    transition: transform 0.5s ease; /* Transición suave para cambiar las imágenes */
+}
+
+/* Estilos para las imágenes dentro del carousel */
+.carousel img {
+    width: 100%; /* Imágenes ocupan todo el ancho del carousel */
+    height: 100%; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para los controles de navegación */
+.carousel-control {
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Posición vertical centrada */
+    transform: translateY(-50%); /* Ajuste vertical */
+    background: none; /*sin fondo*/
+    color: white; /* Color de texto blanco */
+    padding: 10px; /* Espaciado interior */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de ratón */
+}
+
+/* Estilos para el control de navegación 'prev' */
+.carousel-control-prev {
+    left: 0%; /* Alineado a la izquierda */
+}
+
+/* Estilos para el control de navegación 'next' */
+.carousel-control-next {
+    right: 0%; /* Alineado a la derecha */
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 15vh; /* Altura completa de la ventana */
+    font-size: 17px;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.imgredondas {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.image-label-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.rounded-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.image-label {
+    display: block;
+    margin: 50px;
+    font-size: 20px;
+    color: #000;
+    margin-top: 50px; /* Espacio entre la imagen y el label */
+    text-align: center;
+}
+
+.image-label-container img.hover-zoom:hover {
+    transform: scale(1.1); /* Ajusta la escala según lo necesites */
+}
+
+
+/*CATALOGO--------------------------------------------------------------------------------------------------------------------------->*/
+.catalogo {
+    text-align: center;
+    color: #000;
+}
+.parrafo-counteiner{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Asegura que el texto dentro del contenedor esté centrado */
+    width: 590px; /* Ancho fijo del contenedor */
+    height: 15vh; /* Altura del contenedor */
+    margin: auto; /* Centra el contenedor en la página */
+    font-size: 20px;
+    color: #000;
+}
+
+.seccion {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+    background-color: #cfb06c;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bikinis {
+    margin: 65px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bikini-item {
+    text-align: center;
+    position: relative; /* Añadido para el posicionamiento del texto */
+}
+
+.bikini-item img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Asegura que la imagen esté centrada */
+}
+
+.bikini-item label {
+    display: none; /* Oculta el texto por defecto */
+    position: absolute; /* Posiciona el texto relativo al contenedor */
+    bottom: 10px; /* Posiciona el texto a 10px del fondo del contenedor */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Ajusta el centrado horizontal */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+    padding: 5px 10px; /* Espaciado interno del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em;
+}
+
+.bikini-item:hover label {
+    display: block; /* Muestra el texto al pasar el mouse por encima */
+}
+
+
+
+/*CONTACTO.HTML----------------------------------------------------------------------------------------------------------------------->
+/* Estilos para el cuerpo */
+/* Estilos para el cuerpo */
+.content {
+    margin: 20px auto; /* Margen para separar del navbar y centrar horizontalmente */
+    max-width: 800px; /* Ancho máximo del contenido */
+}
+
+/* Estilos para el título y subtítulo */
+h1.catalogo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px; /* Tamaño de fuente ajustado */
+    margin-bottom: 10px; /* Margen inferior */
+    text-align: center; /* Centramos el título */
+}
+
+.parrafo-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px; /* Tamaño de fuente ajustado */
+    margin-bottom: 20px; /* Margen inferior */
+    text-align: center; /* Centramos el subtítulo */
+}
+
+/* Estilos para el formulario */
+form {
+    width: 100%; /* Ancho completo */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 30px;
+    border: 1px solid #f4f4f4; 
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: calc(100% - 12px); /* Ancho del input con margen */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000; /* Borde negro */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: calc(100% - 12px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cfb06c; /* Color mostaza */
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* FOOTER ---------------------------------------------------------------------------------------------------------------------->
+/* Estilos para el footer */
+footer {
+    background-color: #cfb06c; /* Fondo de color mostaza */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto al centro */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Estilos para los contenedores de columna dentro del footer */
+.column-container {
+    display: flex; /* Muestra los contenedores en línea */
+    justify-content: space-around; /* Distribuye los contenedores uniformemente */
+    margin-bottom: 20px; /* Margen inferior para separar las columnas */
+}
+
+/* Estilos para los títulos dentro del footer */
+footer h3 {
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+/* Estilos para las listas dentro del footer */
+footer ul {
+    list-style: none; /* Quita los estilos de lista (viñetas) */
+    padding: 0; /* Elimina el relleno */
+    margin: 0; /* Elimina el margen */
+    display: inline-block; /* Muestra las listas en línea */
+    vertical-align: top; /* Alinea las listas en la parte superior */
+}
+
+/* Estilos para los elementos de las listas dentro del footer */
+footer ul li {
+    margin: 5px 0; /* Espacio entre los elementos de la lista */
+}
+
+
+
